@@ -1,0 +1,76 @@
+:root {
+    --unit: 1vmin;
+    --grey: grey;
+}
+
+
+body {
+    background: lightblue;
+    background-repeat: no-repeat;
+    font-size: var(--unit);
+}
+body:after{
+    --wm__body: linear-gradient(white, lightgray) 2em 2em / 46em 63em;
+    --wm__body_left: linear-gradient(white, lightgray) 0em 2em / 2em 63em;
+    --wm__body_top_left: radial-gradient(white 0 75%, transparent 75% 100%) 0em 0em / 4em 4em;
+    --wm__body_top_middle: linear-gradient(white,white) 2em 0em / 46em 2em;
+    --wm__body_top_right: radial-gradient(white 0 75%, transparent 75% 100%) 46em 0em / 4em 4em;
+    --wm__body_right: linear-gradient(white, lightgray) 48em 2em / 2em 63em;
+
+    --wm__door: radial-gradient(navy 0, rgb(48, 129, 204) 47%, rgb(175, 175, 175) 48% 54%, lightgray 54% 68%, darkgray 68% 70%, transparent 70% 100%) 3em 10em / 44em 44em;
+
+    --wm__divider: linear-gradient(lightgray, lightgray) 0em 12em / 50em .5em;
+
+    --wm__power_led: radial-gradient(red 0, darkred 65%, transparent 70% 100%) 2em 1em / 2em 2em;
+
+    --wm__draw_top: linear-gradient(darkgray, darkgray) 1.8em 4.5em / 13.5em 1em;
+    --wm__draw_handle: linear-gradient(lightgray, white) 2em 5.5em / 13em 4em;
+
+    --wm__dial_main: radial-gradient(white 0 60%, gray 65% 70%, transparent 75% 100%) 22em 2em / 6em 6em;
+    --wm__dial_left: radial-gradient(white 0 60%, gray 65% 70%, transparent 75% 100%) 18em 6em / 2em 2em;
+    --wm__dial_right: radial-gradient(white 0 60%, gray 65% 70%, transparent 75% 100%) 30em 6em / 2em 2em;
+
+    --wm__display: linear-gradient(black, navy) 35em 2.5em / 13em 5em;
+
+    --wm__button_one: linear-gradient(lightgray, lightgray) 35em 8em / 2.5em 1.5em;
+    --wm__button_two: linear-gradient(lightgray, lightgray) 38.5em 8em / 2.5em 1.5em;
+    --wm__button_three: linear-gradient(lightgray, lightgray) 42em 8em / 2.5em 1.5em;
+    --wm__button_four: linear-gradient(lightgray, lightgray) 45.5em 8em / 2.5em 1.5em;
+
+    content: '';
+    background: 
+        var(--wm__power_led),
+
+        var(--wm__draw_top),
+        var(--wm__draw_handle),
+
+        var(--wm__dial_left),
+        var(--wm__dial_main),
+        var(--wm__dial_right),
+
+        var(--wm__display),
+
+        var(--wm__button_one),
+        var(--wm__button_two),
+        var(--wm__button_three),
+        var(--wm__button_four),
+
+        var(--wm__door),
+
+        var(--wm__divider),
+
+        var(--wm__body_left),
+        var(--wm__body_top_left),
+        var(--wm__body_top_middle),
+        var(--wm__body_top_right),
+        var(--wm__body_right),
+        var(--wm__body);
+    background-repeat: no-repeat;
+    width: 50em;
+    height: 65em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}

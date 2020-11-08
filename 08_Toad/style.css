@@ -1,0 +1,50 @@
+:root {
+    --unit: 1vmin;
+    --grey: grey;
+}
+
+
+body {
+    background: lightblue;
+    background-repeat: no-repeat;
+    font-size: var(--unit);
+}
+body:after{
+	--hat: radial-gradient(transparent 0 66%, black 66% 70%, white 70% ) 3em 1em / 46em 40.5em;
+	--hat__left: radial-gradient( blue 0 70%, transparent 70% 100%) -4em 5em / 22em 22em;
+	--hat__center: radial-gradient( blue 0 70%, transparent 70% 100%) 21em -6em / 20em 18em;
+	--hat__right: radial-gradient( blue 0 70%, transparent 70% 100%) 35em 13em / 22em 22em;
+	--hat__ridge_1: radial-gradient( transparent 0 66%, black 66% 70%, transparent 70% 100%) 9em 24em / 30em 33em;
+	--hat__ridge_2: radial-gradient( white 0 70%, transparent 70% 100%) 9em 26em / 30em 20em;
+
+	--toad_bg: linear-gradient(white, white) -20em -20em / 60em 60em;
+
+	--face__lower: radial-gradient( green 0 64%, black 64% 70%, transparent 70% 100%) 12.5em 28em / 23.5em 18em;
+	--face__left: linear-gradient(100deg, black 0 10%, green 10% 100%) 3em 20em / 10em 10em;
+    content: '';
+	background:
+		var(--face__left),
+		var(--face__lower),
+		var(--hat),
+		var(--hat__left),
+		var(--hat__center),
+		var(--hat__right),
+		var(--hat__ridge_2),
+		var(--hat__ridge_1),
+		var(--toad_bg);
+    background-repeat: no-repeat;
+    width: 50em;
+	height: 74em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
